@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研究参加の同意書</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="consent-overlay">
+        <div id="consent-box">
+            <h2 class="mb-4">研究参加の同意書</h2>
+
+            <div class="content-text mb-4">
+                本アンケートは、育児のご経験や専門の知識を有する方々の貴重な意見を集め、子育て支援AIチャットボット「ククちゃん」の開発に生かすことを目的としています。ぜひご協力をお願いいたします！
+            </div>
+
+            <ul class="consent-list mb-4">
+                <li>本研究は電気通信大学 人工知能先端研究センターが実施しています。</li>
+                <li>皆様から提供いただいた情報は、最大限の注意を払って適切に管理し、厳重に保護いたします。</li>
+                <li>収集したデータは研究目的にのみ使用され、個人を特定できる情報が含まれていた場合でも、それらが外部に漏れることは一切ございません。</li>
+                <li>研究成果は学術論文等で公表される可能性がありますが、個人を特定できる情報は含まれません。</li>
+                <li>本システムで提供される情報は参考情報です。医療や専門的なアドバイスが必要な場合は、専門家にご相談ください。</li>
+            </ul>
+
+            <div class="study-flow mb-4">
+                <h3 class="flow-title mb-3">研究の流れ</h3>
+                <ol class="flow-list">
+                    <li>ククちゃんに子育ての相談や質問をしていただきます。</li>
+                    <li>会話が終わりましたら、「チャットを終わる」ボタンを押してください。</li>
+                    <li>その後表示される最終アンケートにご回答ください。</li>
+                </ol>
+                <p class="flow-note">
+                    所要時間はおよそ5~10分です。<br>
+                    よろしければ何パターンか会話を評価して頂きたく思います。
+                </p>
+            </div>
+
+            <div class="contact-info mb-4">
+                調査責任者：粕谷<br>
+                電気通信大学 人工知能先端研究センター<br>
+                調査担当：平尾・阿部<br>
+                研究協力　ChiCaRo社<br>
+                連絡先：s_hirao@radish.ee.uec.ac.jp
+            </div>
+
+            <div class="birth-date-container">
+                <div class="birth-date-label">生年月日を選択してください</div>
+                <div class="birth-date-select">
+                    <select id="yearSelect" class="date-select">
+                        <option value="">年</option>
+                    </select>
+                    <select id="monthSelect" class="date-select">
+                        <option value="">月</option>
+                    </select>
+                    <select id="daySelect" class="date-select">
+                        <option value="">日</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="consent-button-container">
+                <button id="consentButton" disabled>同意して始める</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="consent.js" type="module"></script>
+</body>
+</html>
